@@ -16,7 +16,7 @@ public:
 
 
 
-    // Constructor to initialize a node with given data and next pointer
+    // Constructor to initialize a node with given data and next pointers.
 
     Node(int new_data) : data(new_data), next(nullptr) {}
 
@@ -48,7 +48,8 @@ void append(Node** head_ref, int new_data) {
 
 
 
-    // 3. This new node is going to be
+    // 3. This new node is going to be in data.
+
 
     // the last node, so make next of
 
