@@ -1,0 +1,27 @@
+2. LENGTH OF THE LINKED LIST:
+Explanation:
+•	Iterative Approach:
+•	The find Length Iterative function uses a while loop to traverse the linked list, incrementing a counter (length) for each node.
+•	The loop continues until the end of the list is reached, and the final count is returned.
+STEPS
+   1.Initialize a variable length to 0 and a pointer current to the head of the linked list.
+   2.Traverse the linked list using a loop.
+   3.In each iteration, increment the length by 1 and move the current pointer to the next node.
+   4.Repeat until the end of the list is reached.
+   5.Return the calculated length.
+
+•	Recursive Approach:
+•	The find Length Recursive function recursively calls itself on the next node until the base case (end of the list) is reached.
+•	The length is incremented by 1 for each node encountered during the recursive calls, and the total length is returned.
+STEPS
+   1.The base case for recursion is when the node is nullptr, indicating an empty list. In this case, return 0.
+   2.In the recursive case, increment the length by 1 and make a recursive call to the function with the next node in the list.
+   3.Each recursive call handles one node at a time until the base case is reached.
+   4.The sum of 1 for the current node and the length from the next node is returned.
+   5.The final result is the total length of the linked list.
+   Both approaches provide the length of the linked list, and the choice between them depends on factors such as efficiency and code readability. 
+   Iterative solutions are often more memory-efficient, while recursive solutions can be more elegant for certain problems.
+Termination Conditions:
+•	In the iterative approach, the loop continues until the current node becomes nullptr, signifying the end of the list.
+•	In the recursive approach, the base case checks if the current node is nullptr, indicating the end of the list. If true, it returns 0.
+Feel free to test and run this program in Visual Studio 2022 to observe the length of the linked list using both iterative and recursive approaches.

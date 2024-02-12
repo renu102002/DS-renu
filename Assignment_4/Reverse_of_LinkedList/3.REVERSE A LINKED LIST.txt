@@ -1,0 +1,19 @@
+3.	REVERSE A LINKED LIST:
+Explanation:
+•	Iterative Approach:
+               1.Initialize three pointers: prev, current, and next.
+               2.Traverse the linked list using a loop.
+               3.In each iteration, save the next node, reverse the link (current->next = prev), and move the pointers forward.
+               4.Repeat until the end of the list is reached.
+               5.Return the new head of the reversed list (which is the last node, prev).
+
+•	Recursive Approach:
+               1.The base case for recursion is when the current pointer is nullptr. In this case, return the prev pointer, which is the new head of the reversed list.
+               2.In each recursive call, save the next node, reverse the link (current->next = prev), and call the function recursively with updated pointers.
+               3.The recursion progresses until the end of the original list, and the reversed list is constructed during the recursive calls.
+
+Differences and Challenges:
+Iterative Approach: Uses a loop and maintains three pointers to reverse the linked list in a single pass. It is generally more memory-efficient.
+Recursive Approach: Utilizes function calls and implicitly maintains a call stack. While elegant, it may lead to stack overflow for large lists due to the depth of recursion.
+Choose the approach based on your specific requirements and constraints. The iterative approach is often preferred for efficiency, while the recursive approach may be chosen for its elegance and simplicity.
+
